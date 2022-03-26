@@ -1,0 +1,20 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:background="@drawable/br1" android:layout_height="wrap_content" android:fillViewport="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" tools:context=".GiaoDienChinh">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <LinearLayout app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/alo" android:layout_width="match_parent" android:gravity="center" android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_weight="0.9" android:gravity="center" android:text="APP XEM PHIM" android:textColor="@color/Fuchsia" android:textSize="20dp" android:textStyle="bold"/>
+            </LinearLayout>
+            <ImageView app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:id="@+id/imageButton" android:layout_width="40dp" android:layout_height="wrap_content" android:onClick="goTimKiem" app:layout_constraintEnd_toEndOf="@id/alo" android:adjustViewBounds="true" app:srcCompat="@drawable/icontimkiem"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:id="@+id/textView20" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:textColor="@color/white" android:text="Phim Anime" android:textSize="20dp" android:textStyle="bold"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/theloai1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <TextView android:id="@+id/textView9" android:layout_width="match_parent" android:textSize="20dp" android:textColor="@color/white" android:layout_marginTop="10dp" android:textStyle="bold" android:layout_height="wrap_content" android:text="Phim Kinh Dị"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/theloai3" android:layout_marginTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="10dp" android:id="@+id/textView10" android:textStyle="bold" android:textSize="20dp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Phim Tình Cảm"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_marginTop="10dp" android:id="@+id/theloai4" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="10dp" android:id="@+id/textView21" android:textStyle="bold" android:textColor="@color/white" android:textSize="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Phim Hành Động"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_marginTop="10dp" android:id="@+id/theloai2" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:layout_marginTop="10dp" android:id="@+id/textView15" android:textStyle="bold" android:textColor="@color/white" android:textSize="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Phim Trinh Thám"/>
+        <androidx.recyclerview.widget.RecyclerView android:layout_marginTop="10dp" android:id="@+id/theloai5" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</ScrollView>
